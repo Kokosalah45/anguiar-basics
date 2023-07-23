@@ -6,5 +6,8 @@
     handleImageChange(e : Event ){
       this.imgUrl = (e.target as HTMLInputElement).value;
     }
+    logImgSelected(imgSelected:string){
+      console.log(imgSelected);
+    }
 
  }

@@ -1,5 +1,5 @@
 <div>
   <header>Halo {{title}}</header>
   <input type="text" (input)="handleImageChange($event)" [value]="imgUrl">
-  <app-post [postImg]="imgUrl"></app-post>
+  <app-post (sendImgSelected)="logImgSelected($event)" [postImg]="imgUrl"></app-post>
 </div>
